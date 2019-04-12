@@ -35,7 +35,7 @@ const shield2 = {
 // If the item's enhancement level is greater than 16, the enhancement level decreases by 1 (17 goes down to 16, 18 goes down to 17).
 const shield3 = {
     name: 'Shield',
-    enhancement: 16,
+    enhancement: 17,
     durability: 18
 }
 
@@ -58,8 +58,8 @@ describe('the enhancer module', () => {
         it('should return an item with enhacement changed based on durability', () => {
             expect(enhancer.fail(shield3)).toEqual({
                 name: shield3.name,
-                enhancement: shield3.enhancement,
-                durability: 17
+                enhancement: 16,
+                durability: 18
             })
         })
     })

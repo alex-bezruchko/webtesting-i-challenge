@@ -31,7 +31,7 @@ function fail(item) {
     newItem.durability = item.durability - 10
   }
   else {
-    newItem.durability = item.durability -  1
+    newItem.enhancement = item.enhancement -  1
   }
   return newItem;
 }
